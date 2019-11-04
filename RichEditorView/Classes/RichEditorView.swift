@@ -122,6 +122,12 @@ import UIKit
 
     // MARK: Initialization
     
+    public init(frame: CGRect, background: UIColor) {
+        webView = UIWebView()
+        super.init(frame: frame)
+        setup()
+    }
+    
     public override init(frame: CGRect) {
         webView = UIWebView()
         super.init(frame: frame)
@@ -134,7 +140,7 @@ import UIKit
         setup()
     }
     
-    private func setup() {
+    private func setup(background: UIColor = .white) {
         backgroundColor = .red
         
         webView.frame = bounds
@@ -143,7 +149,7 @@ import UIKit
         webView.scalesPageToFit = false
         webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         webView.dataDetectorTypes = UIDataDetectorTypes()
-        webView.backgroundColor = .white
+        webView.backgroundColor = background
         
         webView.scrollView.isScrollEnabled = isScrollEnabled
         webView.scrollView.bounces = false
