@@ -125,7 +125,7 @@ import UIKit
     public init(frame: CGRect, background: UIColor) {
         webView = UIWebView()
         super.init(frame: frame)
-        setup()
+        setup(background: background)
     }
     
     public override init(frame: CGRect) {
