@@ -180,7 +180,7 @@ RE.setUnderline = function() {
 RE.setTextColor = function(color) {
     RE.restorerange();
     document.execCommand("styleWithCSS", null, true);
-    document.execCommand('foreColor', false, color);
+    document.getElementById("editor").style.color = color;
     document.execCommand("styleWithCSS", null, false);
 };
 
