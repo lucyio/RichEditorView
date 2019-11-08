@@ -178,7 +178,7 @@ RE.setUnderline = function() {
 };
 
 RE.setTextColor = function(color) {
-    RE.restorerange();
+//    RE.restorerange();
 //    document.execCommand("styleWithCSS", null, true);
     document.getElementById("editor").style.color = color;
 //    document.execCommand("styleWithCSS", null, false);
