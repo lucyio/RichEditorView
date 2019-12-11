@@ -141,7 +141,7 @@ import UIKit
     }
     
     private func setup(background: UIColor = .white) {
-        backgroundColor = .red
+        backgroundColor = .clear
         
         webView.frame = bounds
         webView.delegate = self
